@@ -1,8 +1,8 @@
 const specialCharacter = ['\r|   ','\r/   ','\r-   ','\r\\   '];
 
-const spinnerFunction = (input) => {
+const spinnerFunction = () => {
   let increment = 0;
-  for (let elements in input) {
+  for (let elements of specialCharacter) {
     increment = increment + 150;
     setTimeout(() => {
       process.stdout.write(elements);
